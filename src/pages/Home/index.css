@@ -1,0 +1,11 @@
+.tab-style {
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: none;
+  padding: 0 50px 50px 50px;
+  background-color: #ffffff;
+}
+.link-sign {
+  margin-top: 10px;
+  text-align: center;
+}
