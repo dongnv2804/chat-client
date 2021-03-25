@@ -14,8 +14,12 @@ const slice = createSlice({
       ...state,
       user: action.payload,
     }),
+    getRoomsSuccess: (state, action) => ({
+      ...state,
+      rooms: action.payload,
+    }),
   },
 });
 
-export const { loginSucess } = slice.actions;
+export const { loginSucess, getRoomsSuccess } = slice.actions;
 export default slice.reducer;

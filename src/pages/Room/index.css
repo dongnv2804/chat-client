@@ -1,7 +1,54 @@
 .layout {
+  display: flex;
+  justify-content: center;
+}
+.wrap-room {
+  margin-top: 10em;
+  width: 50%;
+  height: 50%;
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   border: none;
   padding: 0 50px 50px 50px;
   background-color: #ffffff;
+  text-align: center;
+}
+.title {
+  padding: 2em;
+  font-size: 16px;
+  font-weight: bold;
+}
+.layout-search {
+  display: flex;
+}
+.ml-1 {
+  margin-left: 1em;
+}
+.list-body {
+  text-align: left;
+  margin-top: 5px;
+}
+.ant-list-items {
+  height: 300px;
+  overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

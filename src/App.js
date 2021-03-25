@@ -14,6 +14,11 @@ const routes = [
     component: lazy(() => import("./pages/Room")),
     exact: true,
   },
+  {
+    path: "/chat",
+    component: lazy(() => import("./pages/Chat")),
+    exact: true,
+  },
 ];
 
 const RouteWithSubRoute = (route) => {

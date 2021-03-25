@@ -25,7 +25,18 @@ function* register({ payload }) {
   }
 }
 
+function* getRooms({ payload }) {
+  const { userId } = payload;
+  try {
+    const { data } = yield call(api.getRooms, userId);
+    yield put(sliceAct.getRoomsSuccess(data));
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 export default function* homeSaga() {
   yield takeLatest(action.login, login);
   yield takeLatest(action.register, register);
+  yield takeLatest(action.getRooms, getRooms);
 }
